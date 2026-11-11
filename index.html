@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpeakUp — speak English with confidence</title>
+  <meta name="description" content="Free personal English-speaking trainer: placement test, read-aloud, shadowing, answer-fast drills, minimal pairs, lessons and flashcards.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/dashboard"><span class="logo">🎙️</span> Speak<b>Up</b></a>
+    <!-- Main navigation: top bar on desktop, bottom bar on mobile -->
+    <nav class="nav" aria-label="Main">
+      <a data-nav="dashboard" href="#/dashboard"><span>🏠</span><em>Home</em></a>
+      <a data-nav="daily" href="#/daily"><span>📅</span><em>Today</em></a>
+      <a data-nav="speak" href="#/speak/read"><span>🎙️</span><em>Speak</em></a>
+      <a data-nav="lessons" href="#/lessons"><span>📘</span><em>Lessons</em></a>
+      <a data-nav="cards" href="#/cards"><span>🃏</span><em>Cards</em></a>
+      <a data-nav="placement" href="#/placement" class="hide-mobile"><span>🧭</span><em>Test</em></a>
+      <a data-nav="settings" href="#/settings"><span>⚙️</span><em>Settings</em></a>
+    </nav>
+  </header>
+
+  <div id="banners"></div>
+  <main id="app" tabindex="-1"></main>
+  <div id="toasts" aria-live="polite"></div>
+
+  <noscript>SpeakUp needs JavaScript to run.</noscript>
+
+  <!-- Content first, then core modules, then pages, then the router (app.js) last. -->
+  <script src="data/content.js"></script>
+  <script src="data/questions.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/claude.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/recorder.js"></script>
+  <script src="js/placement.js"></script>
+  <script src="js/speaking.js"></script>
+  <script src="js/lessons.js"></script>
+  <script src="js/daily.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
